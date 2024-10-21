@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
 import { heroData, btntag } from '../Data';
+import Dots from './Common/Dots';
 function Heroimg() {
     const [move, setMove] = useState(0);
-    console.log(move)
 
     useEffect(() => {
         const timer1 = setInterval(() => {
@@ -32,13 +32,8 @@ function Heroimg() {
                         ))}
                     </div>
                 </div>
+                <Dots num={4} move={move} />
 
-                <div className='flex w-fit justify-center items-center space-x-3 mt-2'>
-                    {btntag.map((item, index) => (
-                        <div key={index} className={`${move === index ? ' transition ease-in-out duration-500 bg-blue-700 scale-150' : 'bg-white'} w-2 h-2 rounded-full`}>
-                        </div>
-                    ))}
-                </div>
             </div>
         </div>
     )

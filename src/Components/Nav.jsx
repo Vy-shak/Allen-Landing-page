@@ -4,6 +4,7 @@ import { Phone, Allenlogo, Burgermenu } from '../assets';
 import { Navdata } from '../Data';
 import Menuitem from './Menuitem';
 import Sidebar from './Sidebar';
+import { ChevronRight } from 'lucide-react';
 
 function Nav() {
     const [sideBar, setsideBar] = useState(false)
@@ -23,7 +24,7 @@ function Nav() {
             <div className=' absolute w-fit flex flex-col justify-between items-start  p-6 left-0 top-0 h-fit bg-gray-900 rounded-md'>
                 <div className='flex justify-between w-full items-center '>
                     <img width={72} height={14} src={Allenlogo} alt="logo main" />
-                    <span onClick={() => setsideBar(false)} className='w-fit'>{"x"}</span>
+                    <ChevronRight onClick={() => setsideBar(false)} />
                 </div>
                 <Sidebar />
                 <span>Login</span>

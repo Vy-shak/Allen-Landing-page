@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { adData, btntag } from '../Data';
-import { useRef } from 'react';
 import { useState } from 'react';
+import Dots from '../Components/Common/Dots';
 
 function CourseAd() {
     const [move, setMove] = useState(0);
@@ -34,12 +34,7 @@ function CourseAd() {
                     ))}
                 </div>
             </div>
-            <div className='flex w-fit justify-center items-center space-x-3 mt-2'>
-                {btntag.map((item, index) => (
-                    <div key={index} className={`${move === index ? ' transition  ease-in-out duration-500 bg-blue-700 scale-150' : 'bg-white'} w-2 h-2 rounded-full `}>
-                    </div>
-                ))}
-            </div>
+            <Dots move={move} num={4} />
         </section>
     )
 

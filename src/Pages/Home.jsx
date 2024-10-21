@@ -1,7 +1,6 @@
 import React from 'react'
 import Nav from '../Components/Nav';
-import Hero from '../Section/Hero';
-import CourseAd from '../Section/courseAd';
+import { Hero, CourseAd, Results } from '../Section';
 
 function Home() {
   return (
@@ -14,6 +13,9 @@ function Home() {
       </section>
       <section className=' z-0 w-full px-20 padding-y bg-gray-900'>
         <CourseAd />
+      </section>
+      <section className=' z-0 w-full px-20 padding-y bg-gray-900'>
+        <Results />
       </section>
     </ section>
   )
