@@ -1,16 +1,15 @@
 import React, { useState } from 'react'
-import { useRef } from 'react';
 import Dropdown from './Dropdown';
-
+import { ChevronRight } from 'lucide-react'
 
 function Menuitem({ menuData, depthlvl }) {
     const [child, setchild] = useState(false);
     depthlvl = depthlvl + 1;
     function setmenu() {
         return (
-            <div className={` flex justify-between w-full `}>
-                <label>{menuData.menu}</label>
-                <span>{`${menuData.submenu && depthlvl !== 1 ? ">" : " "}`}</span>
+            <div className={` flex justify-between w-full items-center `}>
+                <label className='whitespace-nowrap'>{menuData.menu}</label>
+                {menuData.submenu && depthlvl !== 1 ? (<ChevronRight />) : null}
             </div>
         )
     }
