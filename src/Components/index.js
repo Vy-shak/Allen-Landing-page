@@ -4,7 +4,8 @@ import Nav from "./Nav";
 import Sidebar from "./Sidebar";
 import Subbar from "./Subbar";
 import Heroimg from "./Heroimg";
+import Discovercard from "./Discover/Discovercard";
 
 
 
-export { Menuitem, Dropdown, Nav, Sidebar, Subbar, Heroimg }
+export { Menuitem, Dropdown, Nav, Sidebar, Subbar, Heroimg, Discovercard }

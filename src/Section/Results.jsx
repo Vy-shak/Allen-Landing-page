@@ -31,10 +31,10 @@ function Results() {
                 </div>
             </div>
             <div className='w-full absolute flex justify-between  px-40'>
-                <div onClick={sliderleft} className='w-fit flex justify-center items-center h-fit p-2 rounded-md bg-white bg-gray-500'>
+                <div onClick={sliderleft} className='w-fit flex justify-center items-center h-fit p-2 rounded-md  bg-gray-500'>
                     <ChevronLeft />
                 </div>
-                <div onClick={slideright} className='w-fit flex justify-center items-center h-fit p-2 rounded-md bg-white bg-gray-500'>
+                <div onClick={slideright} className='w-fit flex justify-center items-center h-fit p-2 rounded-md bg-gray-500'>
                     <ChevronRight />
                 </div>
             </div>
