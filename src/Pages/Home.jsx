@@ -1,6 +1,6 @@
 import React from 'react'
 import Nav from '../Components/Nav';
-import { Hero, CourseAd, Results, Advantage, Discover } from '../Section';
+import { Hero, CourseAd, Results, Advantage, Discover, Program, Testimonial } from '../Section';
 
 function Home() {
   return (
@@ -22,6 +22,12 @@ function Home() {
       </section>
       <section className=' z-0 w-full px-20 padding-y bg-gray-900'>
         <Discover />
+      </section>
+      <section className=' z-0 w-full px-20 padding-y bg-gray-900'>
+        <Program />
+      </section>
+      <section className=' z-0 w-full px-20 padding-y bg-gray-900'>
+        <Testimonial />
       </section>
     </ section>
   )
